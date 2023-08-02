@@ -6,11 +6,9 @@ body {
 }
 
 .header {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
   overflow: hidden;
 }
 
@@ -39,6 +37,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
 
 .header-right {
@@ -55,13 +54,12 @@ body {
 
 .conteudo {
   position: relative;
-  top: 25vh;
-  min-height: calc(100vh - 25vh);
   background-color: #ffff;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   width: 70%;
   margin: 0 auto;
+  top: 5vh;
 }
 
 .materia {
@@ -145,3 +143,35 @@ body {
 .whatsapp .linha {
   background: linear-gradient(to right, #75c7cf, #3ab38a);
 }
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    margin-top: 5vh;
+  }
+  
+  .footer-bg {
+    background-color: #fc4c02;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url("imgs/logo_assinatura.png");
+    background-size: auto 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .footer-p {
+    width: 70%;
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+    padding-top: 10px;
+  }
