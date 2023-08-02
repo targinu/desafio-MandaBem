@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.header-bg {
+  background: linear-gradient(to right, #e9492a, #e72357);
+  height: 20vh;
+}
+
+.header-left {
+  position: absolute;
+  top: 4%;
+  width: 100%;
+  height: 20vh;
+  background-image: url("imgs/header-left.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.header-middle {
+  position: absolute;
+  top: 4%;
+  width: 100%;
+  height: 25vh;
+  background-image: url("imgs/header-middle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-right {
+  position: absolute;
+  top: 3%;
+  right: 1%;
+  width: 100%;
+  height: 15vh;
+  background-image: url("imgs/header-right.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
