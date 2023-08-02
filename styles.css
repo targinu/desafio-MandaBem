@@ -145,33 +145,56 @@ body {
 }
 
 .footer {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  margin-top: 5vh;
+}
+
+.footer-bg {
+  background-color: #fc4c02;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("imgs/logo_assinatura.png");
+  background-size: auto 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-p {
+  width: 70%;
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* responsividade */
+@media (max-width: 800px) {
+  .outros {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-    margin-top: 5vh;
+    margin-top: 20px;
   }
-  
-  .footer-bg {
-    background-color: #fc4c02;
+
+  .materia,
+  .nba,
+  .whatsapp {
     width: 100%;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-image: url("imgs/logo_assinatura.png");
-    background-size: auto 30%;
-    background-repeat: no-repeat;
-    background-position: center;
+    margin-bottom: 20px;
+    padding: 10px;
   }
-  
-  .footer-p {
-    width: 70%;
-    font-size: 14px;
-    color: gray;
-    text-align: center;
-    padding-top: 10px;
+
+  .materia h1,
+  .nba h1,
+  .whatsapp h1 {
+    font-size: 20px;
+    margin-top: -10px;
   }
+}
