@@ -69,7 +69,7 @@ body {
   margin: 0 auto;
 }
 
-.imagem {
+.imagem-materia {
   background-image: url("imgs/NRF2020.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -99,4 +99,49 @@ body {
   width: 50%;
   height: 5px;
   background: linear-gradient(to right, #e62259, #695ba3);
+}
+
+.outros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.nba,
+.whatsapp {
+  width: 23%;
+  padding: 20px;
+}
+
+.nba h1,
+.whatsapp h1 {
+  font-family: sans-serif;
+  font-size: 24px;
+  margin-top: -20px;
+  padding: 0px;
+}
+
+.imagem-nba,
+.imagem-whatsapp {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+}
+
+.imagem-nba {
+  background-image: url("imgs/nba.png");
+}
+
+.imagem-whatsapp {
+  background-image: url("imgs/whatsapp.png");
+}
+
+.nba .linha {
+  background: linear-gradient(to right, #76c6cf, #6760a6);
+}
+
+.whatsapp .linha {
+  background: linear-gradient(to right, #75c7cf, #3ab38a);
 }
