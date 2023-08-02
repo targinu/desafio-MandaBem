@@ -178,6 +178,22 @@ body {
 
 /* responsividade */
 @media (max-width: 800px) {
+  .header-bg {
+    height: 10vh; 
+  }
+
+  .header-left,
+  .header-middle,
+  .header-right {
+    top: -10px;
+    height: 19vh; 
+    background-size: auto 50%;
+  }
+
+  .conteudo {
+    top: 2vh;
+  }
+
   .outros {
     flex-direction: column;
     margin-top: 20px;
@@ -196,5 +212,14 @@ body {
   .whatsapp h1 {
     font-size: 20px;
     margin-top: -10px;
+  }
+
+  .imagem-materia {
+    height: 150px;
+  }
+
+  .imagem-nba,
+  .imagem-whatsapp {
+    height: 250px;
   }
 }
